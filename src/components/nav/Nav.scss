@@ -1,5 +1,6 @@
 Nav{
     padding-right: 4vw;
+    padding-block: 1vw;
     ul{
         display: flex;
         flex-direction: row;
@@ -10,8 +11,9 @@ Nav{
             a{
             text-decoration: none;
             color: black;
+            font-size: 2vw;
             &:hover{
-                color:aqua ;
+                color:#d5e5f2 ;
             }
             }
         }

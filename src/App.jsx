@@ -1,14 +1,14 @@
 import './App.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AppRouter } from "./components/appRouter/AppRouter";
-import { Navigation } from "./components/nav/Nav";
 import { Footer } from './components/footer/Footer';
+import { Header } from './components/header/Header';
 
 export const App = () => {
   return (
     <>
     <Router>
-      <Navigation />
+      <Header/>
       <AppRouter></AppRouter>
       <Footer />
     </Router>

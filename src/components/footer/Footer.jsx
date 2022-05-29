@@ -10,6 +10,7 @@ export const Footer = () => {
             const url = 'http://localhost:1337/api/footers?populate=*';
             const result  = await axios.get(url)
             setApiData(result.data.data)
+            // console.log(result.data.data);
             
         }
         getData();
@@ -20,8 +21,7 @@ export const Footer = () => {
             {apiData && apiData.map((item, key) => {
                 return(
                     <li key={key}>
-                        <img src={`http://localhost:1337${item.attributes.Icon.data.attributes.url}`} alt={item.attributes.Title} />
-                        <a href={`https://${item.attributes.Link}`} target="_blank">{item.attributes.Title}</a>
+                        <a href={`https://${item.attributes.Link}`} target="_blank"><img src={`http://localhost:1337${item.attributes.Icon.data.attributes.url}`} alt={item.attributes.Title} /> {item.attributes.Title}</a>
                     </li>
                     )
                 })}

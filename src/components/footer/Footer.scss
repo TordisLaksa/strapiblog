@@ -13,17 +13,17 @@ body{
             grid-template-columns: repeat(4, 1fr);
             justify-content: center;
             li{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 list-style: none;
-                img{
-                    width: 20%;
-                    margin: auto;
-                }
                 a{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     text-decoration: none;
                     text-align: center;
+                    img{
+                        width: 20%;
+                        margin: auto;
+                    }
                 }
             }
         }

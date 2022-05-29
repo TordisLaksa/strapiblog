@@ -1,6 +1,6 @@
 import './Nav.scss';
 import axios from 'axios'
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { useState, useEffect } from "react";
 
 
@@ -12,7 +12,6 @@ export const Navigation = () => {
             const url = 'http://localhost:1337/api/navigation-components/?populate=*';
             const result  = await axios.get(url)
             setApiData(result.data.data[0].attributes.NavigationStuff)
-            // console.log(result.data.data[0].attributes.NavigationStuff);
             
         }
         getData();
@@ -24,10 +23,10 @@ export const Navigation = () => {
                     // console.log(item);
                     return(
                     <li key={index}>
-                        <Link to={item.Link}>{item.Name}</Link>
+                        <NavLink to={item.Link}>{item.Name}</NavLink>
                     </li>
                 )})}
             </ul>
-    </nav>
-)
+        </nav>
+    )
 }

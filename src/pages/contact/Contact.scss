@@ -1,0 +1,97 @@
+#ContactTextSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 4vw;
+
+    h2{
+        text-align: center;
+    }
+    figure{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+        margin-inline: 4vw;
+        img{
+            width: 100%;
+        }
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1vw 2vw;
+        padding-block: 1vw;
+        margin-inline: 4vw;
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+#sectionContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    margin-inline: 4vw;
+    height: 80vh;
+    img{
+        width: 100%;
+        height: 47%;
+        object-position: 50% 81%; //venstre og højre + op og ned
+        object-fit: cover;
+    }
+    form{
+        margin-top: -1.8vw;
+        width: 100%;
+        height: 40vh;
+        
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: .2vw 1.5vw 2vw 1.5vw;
+            legend{
+                padding: 0;
+                margin:0;
+                h2{
+                    margin: 0;
+                }
+            }
+            label{
+                padding-block: .5vw;
+                font-size: 1vw;
+            }
+            input{
+                padding: .3vw;
+                font-size: .8vw;
+            }
+            #radioDivider{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .radio{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: auto;
+                    padding-block: 1vw;
+                    input{
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                    }
+                    
+                }
+
+            }
+            textarea{
+                height: 10vh;
+                resize: none;
+                font-size: .8vw;
+
+            }
+            button{
+                padding: .5vw;
+            }
+        }
+    }
+}

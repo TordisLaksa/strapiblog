@@ -1,3 +1,30 @@
 #sectionBlog{
     padding-bottom: 10vh;
+    padding-inline: 4vw;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+    figure{
+        figcaption{
+            h2{
+                text-align: center;
+            }
+            h3{
+            text-align: center;
+            }
+            article{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1vw;
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+        img{
+            width: 30%;
+            padding-inline: 1vw;
+        }
+    }
+
 }

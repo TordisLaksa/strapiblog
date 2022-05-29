@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding:0;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #88b5bf;
+    
+    // margin-top: -.5vw;
+    img{
+        padding-left: 4vw;
+        padding-block: 1vw;
+        width: 20%;
+    }    
+   
+}

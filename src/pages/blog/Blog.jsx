@@ -25,9 +25,10 @@ export const Blog = () => {
                         <figcaption>
                             <h2>{item.attributes.Title}</h2>
                             <h3>By {item.attributes.Author}</h3>
-                            <article>{item.attributes.Article1}</article>
-                            <article>{item.attributes.Article2}</article>
-                            <article>{item.attributes.Article3}</article>
+                            <article>
+                                <p>{item.attributes.Article_1}</p>
+                                <p>{item.attributes.Article_2}</p>
+                            </article>
                         </figcaption>
                         {item.attributes.Image.data && item.attributes.Image.data.map((item, index) => {
 

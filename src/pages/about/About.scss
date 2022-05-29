@@ -1,0 +1,24 @@
+#sectionAbout{
+    padding-bottom: 10vh;
+    h2{
+        text-align: center;
+    }
+    figure{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+        img{
+            width: 100%;
+        }
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1vw;
+        padding-inline: 4vw;
+        p{
+            p{
+            text-align: justify;
+        }
+        }
+    }}
