@@ -20,7 +20,7 @@ export const Navigation = () => {
         <nav>
             <ul>
                 {apiData && apiData.map((item, index) => {
-                    // console.log(item);
+                    console.log(item.Link);
                     return(
                     <li key={index}>
                         <NavLink to={item.Link}>{item.Name}</NavLink>

@@ -7,7 +7,7 @@ import { Contact } from "../../pages/contact/Contact";
 export const AppRouter = () => {
     return(
         <Routes>
-            <Route path='/home' index element={<Home />} />
+            <Route index element={<Home />} />
             <Route path='/blogs' element={<Blog />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
